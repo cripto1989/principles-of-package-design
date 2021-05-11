@@ -1,2 +1,2 @@
 ### Title
-* [The Single Responsability Principle](Class Design/The Single Responsability Principle.md)
+* [The Single Responsability Principle](Class Design/The_Single_Responsability_Principle.md)
