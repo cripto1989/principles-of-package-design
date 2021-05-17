@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="img/book.jpeg">
+</p>
+
+## Purpose
+The aim of this project is to support anybody looking for all examples of [Principles of Package Design](https://www.apress.com/gp/book/9781484241189) book from [Matthias Noback](https://matthiasnoback.nl/book/principles-of-package-design/).
+
+This repository was developed for Python developers due to all original examples were inside the book written in PHP.
+
+
 ### Class Design
 
 * [The Single Responsability Principle](Class_Design/The_Single_Responsability_Principle.md)
