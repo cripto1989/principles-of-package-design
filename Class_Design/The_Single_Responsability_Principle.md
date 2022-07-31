@@ -1,37 +1,3 @@
-## Classes needed to understand the examples
-
-```py
-from abc import ABC, abstractmethod
-
-class TemplatingEngineInterface(ABC):
-    @abstractmethod
-    def render(self):
-        pass
-
-
-class TranslatorInterface(ABC):
-    @abstractmethod
-    def translate(self, message):
-        pass
-
-
-class MailerInterface(ABC):
-    @abstractmethod
-    def send(self):
-        pass
-
-
-class Message:
-    def __init__(self, subject, body):
-        self.subject = subject
-        self.body = body
-
-    def set_to(self, user):
-        pass
-
-```
-## Examples
-
 ### 1.1
 ```py
 class ConfirmationMailMailer:
@@ -99,4 +65,37 @@ class ConfirmationMailFactory:
         message = Message(subject, body)
         message.set_to(user.get_email_address())
         return message
+```
+
+## Classes needed to understand the previous examples
+
+```py
+from abc import ABC, abstractmethod
+
+class TemplatingEngineInterface(ABC):
+    @abstractmethod
+    def render(self):
+        pass
+
+
+class TranslatorInterface(ABC):
+    @abstractmethod
+    def translate(self, message):
+        pass
+
+
+class MailerInterface(ABC):
+    @abstractmethod
+    def send(self):
+        pass
+
+
+class Message:
+    def __init__(self, subject, body):
+        self.subject = subject
+        self.body = body
+
+    def set_to(self, user):
+        pass
+
 ```
